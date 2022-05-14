@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memes Worlds</title>
+    <link rel="stylesheet" href="stock.css">
+    <link rel="shortcut icon" href="../logo.png">
+</head>
+
+<body>
+    <header>
+      <nav class="navB">
+        <div class="portada">
+          <a href="#" class="logo"><img src="../logo.png">  </a>
+            <h1>Memes Worlds</h1>
+        </div>
+        <ul>
+           <a href="#" class="links">Inicio</a>
+            <a href="https://www.instagram.com/daniel23.03/" target="_blank" class="links">contactanos</a>
+        </ul>
+      
+      </nav>
+       
+    </header>
+    <div class="vistas"><h2>Número de visitas:<h2 id="visitas"></h2></h2></div>
+    <div class="parte1">
+        <h1>La historia de los Memes </h1>
+        <img class="principal" src="./imagenes/principal.jpg">
+        <p>Actualmente los memes son parte de nuestra vida diaria y se han vuelto esenciales en nuestra manera de
+            comunicarnos, pero si eres un centennial, debemos decirte que no, los memes no han existido desde siempre;
+            tan es así que apenas a finales de 2018 la Real Academia Española adoptó el término y lo define como
+            <strong>imagen, video o texto, por lo general distorsionado con fines caricaturescos, que se difunde
+                principalmente
+                a través de internet</strong>
+        </p>
+    </div>
+    <div class="parte2">
+        <h2>Los Primeros Memes</h2>
+        <p>Estos son algunos de los primeros memes en hacerse virales </p> 
+        <ul>
+          <a href="#parrafo1"  class="parrafo" > <li>LOL</li></a>
+          <a href="#parrafo2" class="parrafo"><li>Troll face</li></a>
+          <a href="#parrafo3" class="parrafo"><li>Poker face</li></a>
+          <a href="#parrafo4" class="parrafo"><li>Yao Ming</li></a>
+          <a href="#parrafo5" class="parrafo"><li>Forever alone</li> </a> 
+        </ul>
+          
+         
+        <ol>
+          <li>
+                <h3>Lol: </h3>
+                <p id="parrafo1"><strong>Laugh out loud, o reírse en voz alta en español</strong>, se refiere a este singular meme que
+                    dista mucho de los memes a los que acostumbramos ver hoy en día. Este fue uno de los primeros en
+                    aparecer en internet, allá por el 2010.
+                    ¿Cuándo se usaba? Simplemente cuando una situación era muy graciosa o divertida.</p> 
+                    <img src="./imagenes/1.png" >
+            </li>
+            <li>
+                <h3>Troll face</h3>
+                <p id="parrafo2"><strong>¿Te han trolleado o hecho una broma? Pues este meme que data más o menos de 2008</strong> ,
+                    aplicaba perfectamente para la situación. ¡Hasta una canción tuvo! Para escucharla puedes buscarla
+                    como trololol.</p>
+                    <img src="./imagenes/2.jpg">
+            </li>
+            <li>
+                <h3>Poker face</h3>
+                <p id="parrafo3"><strong>Se trata de un rostro con poca expresión </strong> que podía usarse en situaciones
+                    vergonzosas y se volvió uno de los más famosos. </p>
+                    <img src="./imagenes/3.jpg">
+            </li>
+            <li>
+                <h3>Yao Ming</h3>
+                <p id="parrafo4">Este meme <strong>surgió de una ilustración del jugador de baloncesto Yao Ming</strong> , cuya
+                    expresión encajaba en cualquier situación en la que tu respuesta fuera un: bitch please. ¿Cuándo
+                    surgió? Allá por 2009, ¡hace más de una década!</p>
+                    <img src="./imagenes/4.jpg">
+            </li>
+            <li>
+                <h3>Forever alone</h3>
+                <p id="parrafo5">Para usar este meme, no necesitabas estar precisamente solo, simplemente estar decepcionado o triste
+                    con algo. ¡Pero que no decaiga el ánimo! <strong> Era perfecto para exagerar situaciones</strong>.
+                </p>
+                <img src="./imagenes/5.jpg">
+            </li>
+       </ol>
+            
+
+
+    </div>
+    <script>
+  let vistaActual = localStorage.getItem("visitas");
+  if(vistaActual){
+    let aumento = parseInt(vistaActual) + 1;
+    document.getElementById("visitas").innerHTML = aumento;
+    localStorage.setItem("visitas",aumento)
+  }else{
+    localStorage.setItem("visitas" , 1)
+    document.getElementById("visitas").innerHTML = 1;
+  }
+    </script>
+</body>
+
+</html>
